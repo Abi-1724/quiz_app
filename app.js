@@ -39,10 +39,7 @@ Monet"],
   { 
     question: "What is the largest mammal?", 
     options: ["Elephant", "Blue Whale", "Giraffe", "Shark"], 
-Rollno: 22AD002 
-Name: ABINAYA P 
- 
-43 
+
  
     answer: "Blue Whale" 
   }, 
@@ -91,11 +88,7 @@ function App() {
  
   const handlePlayAgain = () => { 
     setCurrentQuestionIndex(0); 
-Rollno: 22AD002 
-Name: ABINAYA P 
- 
-44 
- 
+
     setScore(0); 
     setShowResult(false); 
     setSelectedOption(null); 
