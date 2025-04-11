@@ -1,0 +1,118 @@
+ 
+/* src/index.css */ 
+ 
+.App { 
+  text-align: center; 
+  font-family: Arial, sans-serif; 
+
+ 
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh; 
+  justify-content: center; 
+  position: relative; 
+  padding-bottom: 50px; /* Space above progress bar */ 
+} 
+ 
+.options { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 20px; 
+} 
+ 
+.option-btn { 
+  padding: 10px 20px; 
+  margin: 5px 0; 
+  width: 60%; 
+  font-size: 16px; 
+  cursor: pointer; 
+  border: none; 
+  border-radius: 5px; 
+} 
+ 
+.option-btn.correct { 
+  background-color: #905bf8; 
+  color: white; 
+} 
+ 
+.option-btn.incorrect { 
+  background-color: #f44336; 
+  color: white; 
+} 
+ 
+.next-btn { 
+  margin-top: 20px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  border: none; 
+  background-color: rgb(33, 150, 243); 
+  color: white; 
+  border-radius: 5px; 
+} 
+ 
+.result { 
+
+ 
+  font-size: 18px; 
+  margin-top: 20px; 
+} 
+ 
+.play-again-btn { 
+  margin-top: 20px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  border: none; 
+  background-color: #4caf50; 
+  color: white; 
+  border-radius: 5px; 
+} 
+ 
+/* src/index.css */ 
+ 
+.progress-bar { 
+  height: 15px; 
+  width: 75%; /* 75% width of the page */ 
+  background: rgba(255, 215, 0, 0.3); 
+  border-radius: 8px; 
+  overflow: hidden; 
+  box-shadow: 0px 0px 10px rgba(255, 223, 0, 0.6); 
+  position: fixed; 
+  bottom: 20px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+} 
+ 
+.progress-bar-fill { 
+  height: 100%; 
+  background: linear-gradient(90deg, #ffd700, #ffcc00, #ffe680); 
+  border-radius: 8px; 
+  animation: shimmer 1.5s infinite alternate ease-in-out; 
+} 
+ 
+.streak-count { 
+  font-size: 20px; 
+  font-weight: bold; 
+  color: #ffd700; /* Golden color for streak */ 
+  position: absolute; 
+  top: 10px; 
+  right: 20px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+
+ 
+  gap: 8px; /* Space between streak number and emoji */ 
+} 
+ 
+/* Shimmer effect */ 
+@keyframes shimmer { 
+  0% { 
+    box-shadow: 0 0 8px #ffd700, 0 0 12px #ffec8b; 
+  } 
+  100% { 
+    box-shadow: 0 0 8px #ffec8b, 0 0 12px #ffd700; 
+  } 
+} 
